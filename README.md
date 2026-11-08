@@ -1,17 +1,25 @@
-# Movies list - Filter
+# Movies list with search – React
 
-The `App`contains a `MoviesList` and a search field. Implement filtering using a `useState` hook.
+React app that filters a list of movies as you type.
 
-> Here is [the working version](https://mate-academy.github.io/react_movies-list-filter/)
+**[▶ Live demo](https://natakovbasniuk.github.io/react_movies-list-filter-js/)**
 
-- On every change save the input value into the `query`;
-- create a `visibleMovies` variable containing filtered movies;
-- check if `movie.title` or `movie.description` contains `query`;
-- ignore leading and trailing spaces;
-- search should be case insensitive (`Inception` can be found by entering `inc` or `Inc` or even `iNC`).
+![Screenshot](docs/screenshot.png)
 
-## Instructions
-- Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Open one more terminal and run tests with `npm test` to ensure your solution is correct.
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://github.com/NataKovbasniuk/react_movies-list-filter-js.git) and add it to the PR description.
+## What I implemented
+- Controlled search input; the query is stored with `useState`
+- Live filtering by movie title and description
+- Case-insensitive search that ignores leading and trailing spaces
+- Rendering the filtered list with components and props
+
+## Tech stack
+React, JavaScript, Vite
+
+## Run locally
+```bash
+npm install
+npm start
+```
+
+---
+Course project at [Mate Academy](https://mate.academy): the task and layout were provided by the course, the React logic is my implementation.
